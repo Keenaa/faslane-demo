@@ -10,6 +10,8 @@
 		74F2A25A1E1F870900A92994 /* FastLaneDemo.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 74F2A2501E1F870900A92994 /* FastLaneDemo.framework */; };
 		74F2A25F1E1F870900A92994 /* FastLaneDemoTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 74F2A25E1E1F870900A92994 /* FastLaneDemoTests.swift */; };
 		74F2A2611E1F870900A92994 /* FastLaneDemo.h in Headers */ = {isa = PBXBuildFile; fileRef = 74F2A2531E1F870900A92994 /* FastLaneDemo.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		74F2A26B1E1F879400A92994 /* User.swift in Sources */ = {isa = PBXBuildFile; fileRef = 74F2A26A1E1F879400A92994 /* User.swift */; };
+		74F2A26D1E1F884D00A92994 /* UserTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 74F2A26C1E1F884D00A92994 /* UserTests.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -29,6 +31,8 @@
 		74F2A2591E1F870900A92994 /* FastLaneDemoTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = FastLaneDemoTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		74F2A25E1E1F870900A92994 /* FastLaneDemoTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FastLaneDemoTests.swift; sourceTree = "<group>"; };
 		74F2A2601E1F870900A92994 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		74F2A26A1E1F879400A92994 /* User.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = User.swift; path = ../User.swift; sourceTree = "<group>"; };
+		74F2A26C1E1F884D00A92994 /* UserTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UserTests.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -72,6 +76,7 @@
 			isa = PBXGroup;
 			children = (
 				74F2A2531E1F870900A92994 /* FastLaneDemo.h */,
+				74F2A26A1E1F879400A92994 /* User.swift */,
 				74F2A2541E1F870900A92994 /* Info.plist */,
 			);
 			path = FastLaneDemo;
@@ -82,6 +87,7 @@
 			children = (
 				74F2A25E1E1F870900A92994 /* FastLaneDemoTests.swift */,
 				74F2A2601E1F870900A92994 /* Info.plist */,
+				74F2A26C1E1F884D00A92994 /* UserTests.swift */,
 			);
 			path = FastLaneDemoTests;
 			sourceTree = "<group>";
@@ -148,6 +154,7 @@
 				TargetAttributes = {
 					74F2A24F1E1F870900A92994 = {
 						CreatedOnToolsVersion = 8.2.1;
+						LastSwiftMigration = 0820;
 						ProvisioningStyle = Automatic;
 					};
 					74F2A2581E1F870900A92994 = {
@@ -196,6 +203,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				74F2A26B1E1F879400A92994 /* User.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -203,6 +211,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				74F2A26D1E1F884D00A92994 /* UserTests.swift in Sources */,
 				74F2A25F1E1F870900A92994 /* FastLaneDemoTests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -320,6 +329,7 @@
 		74F2A2651E1F870900A92994 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_IDENTITY = "";
 				DEFINES_MODULE = YES;
 				DYLIB_COMPATIBILITY_VERSION = 1;
@@ -331,6 +341,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = esgi.meryl.FastLaneDemo;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SKIP_INSTALL = YES;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 				SWIFT_VERSION = 3.0;
 			};
 			name = Debug;
@@ -338,6 +349,7 @@
 		74F2A2661E1F870900A92994 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_IDENTITY = "";
 				DEFINES_MODULE = YES;
 				DYLIB_COMPATIBILITY_VERSION = 1;
@@ -356,6 +368,7 @@
 		74F2A2681E1F870900A92994 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				INFOPLIST_FILE = FastLaneDemoTests/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = esgi.meryl.FastLaneDemoTests;
@@ -367,6 +380,7 @@
 		74F2A2691E1F870900A92994 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				INFOPLIST_FILE = FastLaneDemoTests/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = esgi.meryl.FastLaneDemoTests;
