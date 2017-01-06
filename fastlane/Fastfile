@@ -12,6 +12,7 @@ lane :deploy do
       repository_name: "faslane-demo",
       name: version,
       tag_name: "v_#{version}",
+      api_token: ENV["GITHUB_TOKEN"]
       description: changelog_from_git_commits(),
       commitish: "master"
     )
